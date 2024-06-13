@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+    <style>
+        hr{
+            width: 95%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p id="name">Langkah-langkah memasak air</p>
+    <ol id="daftar">
+        <li id="awal">Masukkan air ke dalam wudhu</li>
+        <li id="akhir">Matikan kompor</li>
+    </ol>
+    <hr size="2">
+</body>
+<script>
+    const newElement = document.createElement('li');
+    const daftar = document.getElementById('daftar');
+    const elementAwal = document.createElement('li');
+    const itemAwal = document.getElementById('awal');
+
+    elementAwal.innerText = 'Hidupkan Kompor.';
+    newElement.innerText = 'Selamat menikmati!';
+    
+
+    // fungsi append child
+    daftar.appendChild(newElement);
+    // fungsi insert Before
+    daftar.insertBefore(elementAwal,itemAwal);
+</script>
+</html>

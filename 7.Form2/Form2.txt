@@ -1,0 +1,35 @@
+1.OnInput
+->Event onInput akan dijalankan setiap kali kita menulis atau menghapus apa pun pada sebuah field input yang memiliki event listener tersebut
+
+contoh : ketika kita menginput nama pada suatu element input kita dapat menghitung berapa karakter text yang telah diinput
+
+2.Onfocus
+->Event onFocus akan dijalankan ketika melakukan klik di sebuah elemen input.
+
+contoh : input ditekan akan menampilkan teks sisa karakter yang harus diketik
+
+3.onBlur
+->Event onBlur akan dijalankan ketika pada kondisi yang terbalik dengan event onFocus, yakni jika kita “pergi” dari elemen yang memiliki event handler untuk event onFocus.
+
+contoh : setelah kita tidak menginput pada kolom onFocus event onFocus akan hilang
+
+4.onChange
+->event onChange akan terjadi jika elemen input mengalami perubahan nilai dan menjadi blur (user tidak focus pada elemen tersebut).
+
+contoh: ketika kita sudah mengisi suatu input validasi dan benar maka button sebelumnya disabled menjadi visible
+
+5.onCopy
+->funFact : Event onCopy tergolong dalam kelompok clipboard events
+->Event ini terjadi jika kita melakukan operasi pada clipboard seperti copy
+
+contoh : Terdapat sebuah input yang memiliki teks dan kita melakukan copy text maka akan ada event yang menampilkan;
+
+
+6.onPaste
+->funFact : Event onPaste tergolong dalam kelompok clipboard events
+->Event ini akan terjadi ketika melakukan operasi paste pada elemen yang sudah kita beri event listener untuk event onPaste.
+
+contoh : Terdapat sebuah input dan kita melakukan paste suatu teks ke input tersebut maka akan ada event yang terjadi;
+
+
+

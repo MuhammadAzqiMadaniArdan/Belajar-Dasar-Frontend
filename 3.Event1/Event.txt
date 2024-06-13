@@ -1,0 +1,15 @@
+1.Event onclick
+->dapat mendeklarasikan event langsung
+contoh : onClick="alert('Halo! Apa Kabar')"
+->dapat digunakan pada script 
+contoh : document.getElementById('incrementButton').onclick = increment;
+
+2.Event onload
+->Fungsi Ketika Website sudah berhasil di load
+contoh :   document.body.onload = welcome;
+->dapat digunakan pada script
+contoh : sama seperti diatas
+
+3.Event Pendukung addEventListener()
+https://developer.mozilla.org/en-US/docs/Web/Events
+

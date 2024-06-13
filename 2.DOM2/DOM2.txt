@@ -1,0 +1,5 @@
+1.Fungsi AppendChild digunakan untuk menambahkan suatu child atau element pada element parentnya
+contoh : orderList.appendChild(newList);
+
+2.Fungsi InsertBefore() digunakan untuk menambahkan suatu element atau tag sebelum tag yang di tuju
+contoh: orderList.InsertBefore(elementSatu,itemAwal)

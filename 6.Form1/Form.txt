@@ -1,0 +1,4 @@
+1.preventDefault()
+ Fungsi :
+ Ketika kita melakukan proses submit pada form, halaman web akan melakukan proses refresh. Nah, event.preventDefault() akan mencegah proses refresh tersebut.
+

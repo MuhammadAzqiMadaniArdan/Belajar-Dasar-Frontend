@@ -1,0 +1,12 @@
+1.Alert()->menampilkan peringatan
+2.Prompt()->mengambil input web browser
+
+Perbedaan InnerHTML dan InnerText
+innerHtml -> mengambil element
+innerText -> Tidak mengambil element
+
+penggunaan BOM 
+untuk membangkitkan fungsionalitas khusus dari browser
+
+penggunaan DOM 
+untuk memanipulasi atau mengubah konten dari sebuah berkas HTML.

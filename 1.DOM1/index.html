@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+
+    <script>
+    // let pesanInput = prompt('Silakan Masukkan Angka!',20);
+    // // Convert pesan ke tipe number
+    // let pesanInputConvertedToNumber = Number(pesanInput);
+    // alert(`Hai ${pesanInputConvertedToNumber}! bertipe ${typeof pesanInputConvertedToNumber}`)
+    </script>
+    <style>
+        button{
+            width: 200px;
+            font-size: 15px;
+            margin: 8px;
+            padding: 3px;
+        }
+        main{
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="function-group" align="center">
+        <button onclick="onText()">ubah Teks Dicoding</button>
+        <button onclick="onHtml()">ubah Style Teks</button>
+        <button onclick="ongambar()">Ubah ukuran Gambar</button>
+    </div>
+<div id="main" align="center">
+    <h2>Its Cube Time!</h2>
+    <img id="gambar" 
+    src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-dicoding-challenge-illustration.png"
+    alt="Its a rubiks cube!" width="150" height="100">
+    <p id="caption"><b>Sudah siap untuk memecahkan teka teki permainan tersebut ?</b> </p>
+    <div class="button-group">
+        <div class="button">
+            <button >Sejarah</button>
+        </div>
+        <div class="button">
+            <button>Permainan</button>
+        </div>
+        <div class="button">
+            <button><i>Fun Fact</i></button>
+        </div>
+        <div class="button">
+            <button disabled>Play (coming soon)</button>
+        </div>
+        <div class="button">
+            <button>Exit</button>
+        </div>
+    </div>
+</div>
+<hr size="2" width="95%" color="black">
+<div id="links">
+  <p>Situs lainnya yang tidak kalah menarik:</p>
+  <ul>
+    <li><a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a></li>
+    <li><a href="http://www.google.com" id="googleLink">Google</a></li>
+  </ul>
+</div>
+    <script src="index.js"></script>
+    <script>
+        const gambar = document.getElementById('gambar');
+
+        function ongambar(){
+
+            // javascript bisa mengkonversi nilai string menjadi integer jika diperkenankan 
+            // seperti dibawah
+            gambar.setAttribute('width',"300");
+            gambar.setAttribute('height',215);
+        }
+        const buttons = document.querySelectorAll('.button');
+        // Mengambil indeks ke 3 element ke 4
+        const playButton = buttons[3];
+        // mengambil anak atau turunan element yang ada di var playButton dengan indeks pertama
+        const playButtonElement = playButton.children[0];
+        playButtonElement.setAttribute('type','submit');
+        
+        const links = document.getElementById('links');
+        
+
+        // alert(links.innerText);
+
+        const dicoding = document.getElementById('dicodingLink');
+        const dicodingText = dicoding.innerText;
+
+        function onText(){
+
+            dicoding.innerText = "Belajar Pemrograman Javascript";
+        }
+
+        function onHtml(){
+            dicoding.innerHTML = `<i>Belajar Pemrograman Javascript</i>`;
+        }
+
+        const buttonClass = document.getElementsByClassName('button');
+
+        let i = 1;
+        for(const button of buttonClass){
+            i += 2;
+            console.log(button.children[0]);
+            button.children[0].style.borderRadius = `6px`;
+        }
+            
+    </script>
+</body>
+</html>

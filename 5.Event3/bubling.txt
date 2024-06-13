@@ -1,0 +1,7 @@
+1.Bubling
+Bubling adalah event yang menunjukkan element dari dalam ke luar
+contoh : soda yang dituangkan maka gelembung akan mengarah ke permukaan
+
+2.Bubling Over
+Kebalikan dari bubling dari event element pertama ke element terakhir
+contoh: kebalikan contoh soda

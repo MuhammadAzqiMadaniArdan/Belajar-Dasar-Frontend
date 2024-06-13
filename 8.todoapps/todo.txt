@@ -1,0 +1,11 @@
+1.DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function () {});
+->Kode di atas adalah sebuah listener yang akan menjalankan kode yang ada didalamnya ketika event DOMContentLoaded dibangkitkan alias ketika semua elemen HTML sudah dimuat menjadi DOM dengan baik.
+
+2.Struktur Data (Tahap 2)
+{
+  id: "string",
+  task: "string",
+  timestamp: "string",
+  isCompleted: "boolean"
+}
